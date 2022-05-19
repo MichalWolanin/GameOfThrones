@@ -1,0 +1,18 @@
+<div class="app-characters">
+  <div class="app-characters__characters-column">
+    <h1>Game Of Thrones</h1>
+    <mat-accordion>
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Rozwiń
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="mat-card">
+          <div *ngFor="let character of characters | async"></div>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+</div>
+
